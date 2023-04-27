@@ -1,0 +1,326 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background: #000;
+    min-height: 200vh;
+}
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding: 2rem 3rem;
+    border-radius: 30rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color:black;
+    text-decoration: none;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+section{
+    padding: 3.5rem 7%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 2.5rem;
+    border-bottom: 0.1rem solid #fff;
+    text-align: center;
+
+}
+.heading span{
+    color: tomato;
+   text-transform: uppercase;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+header span{
+    color: tomato;
+
+}
+header.sticky{
+    padding: 20px 100px;
+    background:#fff;
+}
+header .logo{
+    position: relative;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+
+}
+header ul li a{
+    position: relative;
+    margin: 0 19px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.6s;
+    font-weight: bold;
+    
+    
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background:url(resimler/6.webp) ;
+    background-size: cover;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+
+}
+/*************HEADER ARKAPLANIN CSS BİTİŞ KODLARI*/
+
+/*************************************************/
+
+
+/* menu css baslangıc*/
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,2fr));
+    gap: 1.5rem;
+}
+.menu .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    min-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu .box-container .box img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+
+}
+.menu .box-container .box .menu-category{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+.menu .box-container .box h3{
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.menu .box-container .box .price {
+    font-size: 2.0rem;
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    font-weight: 300;
+
+}
+.urun-title{
+    text-align:left;
+    font-size: 2rem;
+    
+}
+.urun-tanitim{
+    font-size: 15px;
+    padding: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* menu css bitis*/
+
+
+/* product css bitis*/
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    text-align: center;
+    background-color:white;
+    position: relative;
+    border-radius: 3rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.products .box-container .box .box-head{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+.products .box-container .box-bottom .info{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.products .box-container .box-bottom .info .price{
+font-size: 2rem;
+font-family: 'Courier New', Courier, monospace;
+
+}
+.products .box-container .box-bottom .info .amount{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.products .box-container .box .box-head .title{
+ font-size: 20px;
+
+}
+.products .box-container .box .box-head .name{
+    font-size: 2.5rem;
+    
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: start;
+    overflow-wrap: break-words ;
+}
+.products .box-container img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+    transform: translate(-50% -50%);
+    border-radius: 3rem;
+    margin: -230px;
+}
+
+.products .box-container .box-bottom .product-btn a{
+ display: flex;
+ align-items:center;
+ justify-items:center;
+ border-radius: 50%;
+ width: 2.5rem;
+ height: 2.5rem;
+ border: 1px solid;
+ margin-left: 400px;
+ margin-top: -50px;
+
+}
+   
+.products .box-container .box-bottom .product-btn a i{
+    font-size: 40px;
+    color: tomato;
+    margin: 1px;
+}
+
+
+
+
+/* product css bitis*/
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+}
+.about .row .image{
+    flex: 1 1 50rem;
+    margin-left:-90px;
+}
+.about .row .img{
+    width: 100%;
+    margin-left: 50px;
+
+}
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+    list-style: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about .row .content .bton{
+    color:white;
+    background-color:tomato;
+    margin-top: -10px;
+    display:inline-block;
+    padding: 2rem 3rem;
+    border-radius: 30rem;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight:bold;
+
+}
+ul{
+    margin: 0;
+    padding: 0;
+
+}
+.contact li{
+    display:inline-block;
+    margin: 40px;
+    list-style: none;
+}
+.contact li a{
+    color: white;
+    font-size: 100px;
+    transition: all ease-in-out 250ms;
+    padding: 100px;
+}
+.contact li a:hover{
+    color:#b9b9b9;
+}
