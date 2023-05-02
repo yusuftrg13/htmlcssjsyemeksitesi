@@ -5,5 +5,5 @@
 <img src="uyg_görüntü4.jpg" width="auto">
 
 #Proje Amacı
-Kendimi geliştirme amaçlı yaptığım bir pizza tanıtım sitesi yaptım 
+Kendimi geliştirme amaçlı Html Css kullanarak pizza tanıtım sitesi yaptım
 
